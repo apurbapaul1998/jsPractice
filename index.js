@@ -1,6 +1,6 @@
-// // console.log("hey you")
-// // document.write("write on the page")
-// // console.warn("don't do that")
+ console.log("hey you")
+ document.write("write on the page")
+ console.warn("don't do that")
 
 // // Numbers
 // var number1=34;
@@ -14,28 +14,28 @@
 
 
 // // javascript object
-// var marksClass5={
-//     Apurba:1,
-//     Soubhik:16,
-//     Preetam:12,
-//     Rajkumar:14
-// }
+ var marksClass5={
+     Apurba:1,
+     Soubhik:16,
+     Preetam:12,
+     Rajkumar:14
+ }
 
-// console.log(marksClass5)
-// console.log(typeof(marksClass5))
+ console.log(marksClass5)
+console.log(typeof(marksClass5))
 
 
 // // Booleans
-// var a=true;
-// var b=false;
-// console.log(a +"," +b)
+ var a=true;
+ var b=false;
+ console.log(a +"," +b)
 
-// var Z
-// console.log(Z)
+ var Z
+ console.log(Z)
 
 // // Main two types of Javascript
-// // 1.Primitive: undefined,null,number,string,boolean,symbol(will read it later)
-// // 2.Reference data types: Oobjects,Arrays
+// 1.Primitive: undefined,null,number,string,boolean,symbol(will read it later)
+// 2.Reference data types: Oobjects,Arrays
 
 // // Arrays
 // var numbers=[2,3,4,5,6]
