@@ -195,3 +195,31 @@ sel=document.querySelector('.container') //it will return only the 1st element y
 console.log(sel)
 
 
+
+
+//Events in JS
+//we can write inside the html tag that onclick=clicked() the in JS 
+
+ function clicked(){
+     console.log("the button was clicked")
+ }
+
+//events: onmouseover, onmousedown, onmousemove
+ window.onload=function(){
+     document.querySelectorAll('.container')[1].innerHTML=<b>we have clicked</b>
+     console.log('the document was loaded')   //will show when the page reloads
+ }
+let prevHTML=document.querySelectorAll('.container')[1].innerHTML; //saving the prev text inside a string
+firstContainer.addEventListener('mousedown',function(){
+    document.querySelectorAll('.container')[1].innerHTML="<b>we have clicked</b>" //this will change the [1th/2nd] paragraph of container after clicking on the button
+    console.log("down hua bhai")      //we can add eventListeners this way x.addevntlstr('click',what we want to perform through a function)
+}) 
+firstContainer.addEventListener('mouseup',function(){
+    document.querySelectorAll('.container')[1].innerHTML=prevHTML; 
+    console.log("mouse hata liya bhai")      
+})
+
+
+ firstContainer.addEventListener('mouseover',function(){
+     console.log("you touched the container")      //we can add eventListeners this way x.addevntlstr('click',what we want to perform through a function)
+ }) 
