@@ -172,3 +172,26 @@ console.log(jso)
 
 parsed=JSON.parse(`{"name":"Apurba","length":1,"a":{"this":"that"}}`)
 console.log(parsed);
+
+
+
+
+
+
+//Some important DOM manipulation concepts
+
+ tn=document.getElementsByTagName('div')    //storing elements from div into tn
+ console.log(tn);   //printing the tn
+ createdElement=document.createElement('p')        //creating a para inside div
+ createdElement.innerText="This is a created paragraph";    // changing the innerText
+ tn[0].appendChild(createdElement)       //making a child in tn[0]
+
+ tn[0].replaceChild(createdElement2,createdElement); //this will replace createdElement to createdElement2 if we have a createdElement2
+ removeChild(element); --->removes an element
+
+
+// selecting using query
+sel=document.querySelector('.container') //it will return only the 1st element you can use querySelectorAll for selecting all
+console.log(sel)
+
+
