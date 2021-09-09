@@ -223,3 +223,25 @@ firstContainer.addEventListener('mouseup',function(){
  firstContainer.addEventListener('mouseover',function(){
      console.log("you touched the container")      //we can add eventListeners this way x.addevntlstr('click',what we want to perform through a function)
  }) 
+
+
+
+
+
+//Arrow functions
+   function summ(a,b){
+       return a+b;
+   }
+
+  summ=(a,b)=>{
+      return a+b;  //we can add ()=>{action} inside anything easily
+      }
+
+
+// setTimeout and setInterval
+
+logKaro=()=>{
+    console.log("you logged in")
+}
+
+setInterval/setTimeout(logKaro,2000);
