@@ -245,3 +245,54 @@ logKaro=()=>{
 }
 
 setInterval/setTimeout(logKaro,2000);
+
+
+
+// const numbers=[2,3,4,5,6,7,8,9,11,22,32,43]
+
+// const doubles=numbers.map(function(num){
+//     return num*2
+// })
+
+
+// Map and Callback functions
+// const movies = [
+//     { title: 'abc', duration: 110 }, { title: 'abc', duration: 110 }, { title: 'abc', duration: 110 }, { title: 'abc', duration: 110 }, { title: 'abc', duration: 110 }, { title: 'abc', duration: 110 }
+// ]
+// const titles=movies.map(function(movie){
+//     return movie.title
+// })
+
+
+// Filter
+
+// let nums=[9,7,5,8,9,11,91,19]
+// let odds=nums.filter(n=>{
+//     return n%2===1;
+// })
+
+//Every and Some
+// scores=[70,71,73,74,88,90,89,999]
+// scores.every(score =>score>=70)
+
+//Reduce function
+
+//summation w/o reduce
+const prices=[9.99,9.88,5.44,7.88,9.90];
+// let total=0;
+//  for (let i=0;i<prices.length;i++){
+//      total+=prices[i]
+//  }
+//  console.log(total)
+
+ //with reduce function
+//  const total=prices.reduce((total,price)=> {return total+price})
+
+//finding lowest number with the help of reduce function
+
+const min=prices.reduce((min,price)=>{
+    if  (price<min){
+        return price;
+    }return min;
+    
+})
