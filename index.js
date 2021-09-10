@@ -313,3 +313,8 @@ function multiply(a,b=1){
     return a*b
 }
 
+
+//Spread in function calls
+nums=[2,1,1,11,333,444,43,5555555,67,48]
+console.log(Math.max(nums));    //it will print NaN because that function cant take the array
+console.log(Math.max(...nums))  //here spreading the array
