@@ -296,3 +296,20 @@ const min=prices.reduce((min,price)=>{
     }return min;
     
 })
+
+
+
+//Default Parameters(10.9.2021) //would take the default value if the param is not given
+ function multiply(a,b){
+     b(typeof b!=='undefined')? b:1
+     return a*b
+ }
+
+// multiply(5,2) //10
+// multiply(5) //5
+
+
+function multiply(a,b=1){
+    return a*b
+}
+
