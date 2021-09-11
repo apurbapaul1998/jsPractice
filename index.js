@@ -420,3 +420,15 @@ const tasButton = document.querySelector('#tas'); //here we selected using query
 //here we are doing the same thing using addEventListener
 tasButton.addEventListener('click', twist,{once:true} //we can add to call only once )
 tasButton.addEventListener('click', shout)
+
+
+// Make Random color project
+// index.html
+<body>
+    <h1>Welcome!</h1>  //this text will change into rgb values once clicked
+    <button>Click Me</button>
+
+    <script src="app.js"></script>
+</body>
+
+// app.js
