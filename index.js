@@ -352,3 +352,11 @@ for (link of links){
     console.log(link.href)
 }
 
+
+// innerHTML,innerText,textContent
+
+const h1=document.querySelector('h1')
+console.dir(h1) //it will show me all the details and contains about h1
+//from that we can find innerText, innerHTML,textContent etc
+//we can also do
+ document.querySelector('h1').innerHTML
