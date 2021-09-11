@@ -360,3 +360,10 @@ console.dir(h1) //it will show me all the details and contains about h1
 //from that we can find innerText, innerHTML,textContent etc
 //we can also do
  document.querySelector('h1').innerHTML
+
+
+ //changing the links
+const allLinks=document.querySelectorAll('a')
+for (let link of allLinks){
+    link.innerText="I am the new link"
+}
