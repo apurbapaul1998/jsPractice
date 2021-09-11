@@ -318,3 +318,37 @@ function multiply(a,b=1){
 nums=[2,1,1,11,333,444,43,5555555,67,48]
 console.log(Math.max(nums));    //it will print NaN because that function cant take the array
 console.log(Math.max(...nums))  //here spreading the array
+
+
+
+//Dom Manipulation 11/09/21
+
+//getElementById returns only one method
+//selecting img tag and consoling all the sorces on the console
+const allImages = document.getElementsByTagName('img'); //saving in a html collections
+
+for (let img of allImages) {
+    console.log(img.src)  //(we can change img source from here also)
+}
+
+
+
+//selecting by the name of the classes
+const squareImages = document.getElementsByClassName('square');
+
+for (let img of squareImages) {
+    img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silky_bantam.jpg/440px-Silky_bantam.jpg';
+}
+
+
+
+//querySelector
+document.querySelector('.square')
+
+//querySelectorAll it returns collection of elements(all the matching)
+
+const links=document.querySelectorAll('p a')
+for (link of links){
+    console.log(link.href)
+}
+
