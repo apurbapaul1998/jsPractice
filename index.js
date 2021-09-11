@@ -367,3 +367,56 @@ const allLinks=document.querySelectorAll('a')
 for (let link of allLinks){
     link.innerText="I am the new link"
 }
+
+
+
+
+//Event reference from MDN (read)
+const btn = document.querySelector('#v2');
+
+btn.onclick = function () {
+    console.log("YOU CLICKED ME!")
+    console.log("I HOPE IT WORKED!!")
+}
+
+function scream() {
+    console.log("AAAAAHHHHH");
+    console.log("STOP TOUCHING ME!")
+}
+
+btn.onmouseenter = scream;
+
+
+document.querySelector('h1').onclick = () => {
+    alert('you clicked the h1!')
+}
+
+// const btn3=document.querySelector('#v3')
+// btn3.addEventListener('click',function(){
+//     alert("clicked!")
+// })
+const btn3 = document.querySelector('#v3');
+btn3.addEventListener('click', function () {
+    alert("CLICKED!");
+})
+
+
+// here below we made the function first( twist and shout)
+function twist() {
+    console.log("TWIST!")
+}
+function shout() {
+    console.log("SHOUT!")
+}
+
+const tasButton = document.querySelector('#tas'); //here we selected using querySelector
+
+
+//here we are calling the functions
+// tasButton.onclick = twist;
+// tasButton.onclick = shout;
+
+
+//here we are doing the same thing using addEventListener
+tasButton.addEventListener('click', twist,{once:true} //we can add to call only once )
+tasButton.addEventListener('click', shout)
