@@ -474,3 +474,23 @@ function colorize() {
     this.style.backgroundColor = makeRandColor();
     this.style.color = makeRandColor();
 }
+
+
+
+//Keyboard Events
+document.querySelector('button').addEventListener('click', function (evt) {
+    console.log(evt)
+})   //event object that is automatically passed in, we are capturing that using evt, here it's mouseEvent,
+ //all the informations related to the event are getting printed
+
+
+
+
+const input = document.querySelector('input');
+input.addEventListener('keydown', function (e) {  //e is the event object
+    console.log(e.key) //here we are adding keyboard event Object
+    console.log(e.code)
+})
+input.addEventListener('keyup', function () {
+    console.log("KEYUP")
+})
