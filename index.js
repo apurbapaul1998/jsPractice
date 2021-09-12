@@ -544,3 +544,25 @@ const addTweet = (username, tweet) => {
     newTweet.append(`- ${tweet}`)
     tweetsContainer.append(newTweet);
 }
+
+//change color after 1sec of the page(using callbacks)
+const delayedColorChange=(newColor,delay,doNext)=>{
+    setTimeout(()=>{
+        document.body.style.backgroundColor=newColor;
+        doNext && doNext();
+    },delay)
+}
+
+delayedColorChange('olive',1000,()=>{
+    delayedColorChange('red',1000,()=>{
+        delayedColorChange('blue',1000,()=>{
+            delayedColorChange('yellow',1000,()=>{
+                delayedColorChange('violet',1000,()=>{
+        
+                })
+        
+            })
+        
+        })
+    })
+})
