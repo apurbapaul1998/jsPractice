@@ -516,3 +516,31 @@ window.addEventListener('keydown', function (e) {
 
     }
 })
+
+
+
+// Tweeting and storing in a list
+
+const tweetForm = document.querySelector('#tweetForm');
+const tweetsContainer = document.querySelector('#tweets');
+tweetForm.addEventListener('submit', function (e) {
+    e.preventDefault(); //without this the page will try to take me to the next default page,it's preventing the default form behavior
+
+    // const usernameInput = document.querySelectorAll('input')[0];
+    // const tweetInput = document.querySelectorAll('input')[1];
+    const usernameInput = tweetForm.elements.username;
+    const tweetInput = tweetForm.elements.tweet;
+    addTweet(usernameInput.value, tweetInput.value)
+    usernameInput.value = '';
+    tweetInput.value = '';
+});
+
+what i am gonna do is , will take the tweet from the form and will save them inside the <li> down below
+const addTweet = (username, tweet) => {
+    const newTweet = document.createElement('li');
+    const bTag = document.createElement('b');
+    bTag.append(username)
+    newTweet.append(bTag);
+    newTweet.append(`- ${tweet}`)
+    tweetsContainer.append(newTweet);
+}
