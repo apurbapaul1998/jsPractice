@@ -494,3 +494,25 @@ input.addEventListener('keydown', function (e) {  //e is the event object
 input.addEventListener('keyup', function () {
     console.log("KEYUP")
 })
+
+//We have access to every event object which is passed in automatically,we can add a parameter to capture it ex: e,evt,event. It contains details about the event, properties and all
+//for arrow keys, we have a key(the letter itself) and a code(corresponds to an actual location on the keyboard,an actual little physical key) 
+window.addEventListener('keydown', function (e) {
+    switch (e.code) {
+        case 'ArrowUp':
+            console.log("up!!");
+            break;
+        case 'ArrowDown':
+            console.log("down!!");
+            break;
+        case 'ArrowRight':
+            console.log("right!!");
+            break;
+        case 'ArrowLeft':
+            console.log("left!!");
+            break;
+        default:
+            console.log("ignored!!");
+
+    }
+})
