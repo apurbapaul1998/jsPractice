@@ -566,3 +566,17 @@ delayedColorChange('olive',1000,()=>{
         })
     })
 })
+
+
+
+//calling APIs and trying to do callback hell
+searchMoviesAPI('Jurrassic',()=>{
+    saveToMyDB(movies,()=>{
+        //if it works,run this:
+    },()=>{
+        //if it doesn't work,run this:
+    })
+
+},()=>{
+    //if API is down or request failed
+})
