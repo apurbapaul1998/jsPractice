@@ -619,3 +619,21 @@ const fetchBitcoinPrice=async ()=>{
         console.log("something went wrong!!!",e)
     }
 }
+
+
+//Axios is a famous library to fetch datas, i can be used at the client side as well as at theserver side, it's simple and can be used easily, that's why it's so famous 
+axios.get('https://api.cryptonator.com/api/ticker/btc-usd')
+    .then(res=>{
+        console.log(res.data.ticker.price)
+    })
+    .catch(err=>{
+        console.log("Error!!",err) //if we go wrong
+    })
+
+const fetchBtcPrice=async()=>{
+    try{
+       const res=await axios.get('https://api.cryptonator.com/api/ticker/btc-usd')
+       console.log(res.data.ticker.price)
+    }
+    catch(e){console.log("Error!!",e)}
+}
