@@ -580,3 +580,19 @@ searchMoviesAPI('Jurrassic',()=>{
 },()=>{
     //if API is down or request failed
 })
+
+
+//getting bitcoin price by crypto api
+//Fetch with promise
+fetch('https://api.cryptonator.com/api/full/btc-usd')
+.then(res=>{
+    console.log("response waiting to parse",res)
+    return res.json() //this returns a promise
+})
+.then(data=>{
+    console.log("data parsed...")
+    console.log(data.ticker.price)
+})
+.catch(e=>{
+    console.log("error!!",e)
+})
