@@ -597,6 +597,7 @@ fetch('https://api.cryptonator.com/api/full/btc-usd')
     console.log("error!!",e)
 })
 
+
 // Fetch with async and await
 const fetchBitcoinPrice=async ()=>{
 
@@ -604,4 +605,17 @@ const fetchBitcoinPrice=async ()=>{
     const data= await res.json()
     console.log(data.ticker.price)
 
+}
+
+
+//if any request goes wrong in the above async and await
+const fetchBitcoinPrice=async ()=>{
+    try{
+        const res= await fetch('https://api.cryptonator.com/api/full/btc-usd')
+        const data= await res.json()
+        console.log(data.ticker.price)
+    }
+    catch(e){
+        console.log("something went wrong!!!",e)
+    }
 }
