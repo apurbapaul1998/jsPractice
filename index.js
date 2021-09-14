@@ -668,4 +668,14 @@ second(function third(){  //we are calling function second over here and passing
 
 //the callbacks come to callstacks after the timer, so it doesn't block the main thread
 
+//We are printing how many times the button was clicked
+let count =0; //using a global variable to count
+//so will use closure to do that, so that it can be secured
+document.getElementById("clickMe").addEventListener("click",function xyz(){
+    console.log("button clicked",++count);
+
+});
+// so will use closure, which binds the function,var
+//it's more secured
+
 
