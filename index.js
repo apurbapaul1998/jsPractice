@@ -687,3 +687,7 @@ function attachEvent(){
 }
 
 attachEvent(); //we are calling the Closure here
+
+//EventListeners are heavy, these form kind of closures,because we don't know when the user is gonna click, 
+//so the memory keeps some memory for the eventListeners, 
+//so a good practice is to free up the eventlisteners space if is not being used
