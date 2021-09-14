@@ -637,3 +637,15 @@ const fetchBtcPrice=async()=>{
     }
     catch(e){console.log("Error!!",e)}
 }
+
+
+//suppose we are searching a movies API and want to take those datas and want to save in our database
+searchMoviesAPI('Fast&Furious',()=>{
+    saveToMyDB(movies,()=>{
+        //if it works run this
+    },()=>{
+        //if it doesn't work,run this
+    })
+},()=>{
+    //if the API is down,or request failed the do this
+})
