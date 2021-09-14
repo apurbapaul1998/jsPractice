@@ -691,3 +691,31 @@ attachEvent(); //we are calling the Closure here
 //EventListeners are heavy, these form kind of closures,because we don't know when the user is gonna click, 
 //so the memory keeps some memory for the eventListeners, 
 //so a good practice is to free up the eventlisteners space if is not being used
+
+
+
+
+
+
+// Debouncing in Javascript
+<input type="text" onkeyup="getData()"/>
+
+let counter = 0;
+const getData = () => {
+  // calls an API and gets Data
+  console.log("Fetching Data ..", counter++);
+}
+
+const debounce = function (fn, d) {
+  let timer;
+  return function () {
+    let context = this,
+      args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      getData.apply(context, arguments);
+    }, d);
+  }
+}
+
+const betterFunction = debounce(getData, 300);
