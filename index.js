@@ -649,3 +649,21 @@ searchMoviesAPI('Fast&Furious',()=>{
 },()=>{
     //if the API is down,or request failed the do this
 })
+
+
+//Namaste Javascript ep.14 Callbacks Akshay Saini
+//we should use async operations if we want to use heavy functions, otherwise it blocks the main thread,
+//so the code takes lot of time to execute
+ setTimeout(function(){
+     console.log("technically it should have been the first");
+ },5000)
+function second(third){
+    console.log("2nd");
+    third();
+}
+
+second(function third(){
+    console.log("3rd");
+})
+
+//the callbacks come to callstacks after the timer, so it doesn't block the main thread
