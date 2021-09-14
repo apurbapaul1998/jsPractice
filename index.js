@@ -657,13 +657,15 @@ searchMoviesAPI('Fast&Furious',()=>{
  setTimeout(function(){
      console.log("technically it should have been the first");
  },5000)
-function second(third){
+function second(third){  //third is the callback function,third is dependent on second on how it gonna third
     console.log("2nd");
-    third();
+    third();      //function second calling third here
 }
 
-second(function third(){
+second(function third(){  //we are calling function second over here and passing another function as an argument
     console.log("3rd");
 })
 
 //the callbacks come to callstacks after the timer, so it doesn't block the main thread
+
+
