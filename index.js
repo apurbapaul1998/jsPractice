@@ -678,4 +678,12 @@ document.getElementById("clickMe").addEventListener("click",function xyz(){
 // so will use closure, which binds the function,var
 //it's more secured
 
+function attachEvent(){
+    let count =0;
+    document.getElementById("clickMe").addEventListener("click",function xyz(){
+        console.log("button clicked",++count);
+    
+    });
+}
 
+attachEvent(); //we are calling the Closure here
