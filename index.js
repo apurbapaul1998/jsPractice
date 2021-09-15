@@ -827,3 +827,9 @@ let printMyName=printFullName.bind(name2,"Mumbai","Maharsatra");  //this is a fu
  //it makes a copy which we can use later
 console.log(printMyName);
 printMyName;
+
+
+//factory Function:
+//If we have complex logic, and we have to create multiple objects again and again that have the same logic, 
+//we can write the logic once in a function and use that function as a factory to create our objects. 
+//It’s exactly the same as a real-world factory producing products.
