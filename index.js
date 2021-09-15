@@ -754,3 +754,14 @@ const getDadJoke = async () => {
 
 }
 button.addEventListener('click', addNewJoke)
+
+//prototypes
+//whenever we make a js object, our js engine automtically attaches our objects with some hidden properties and object
+//these are the properties we can access doing object.theProperty, even the functions get the properties,even the variables,these come via prototype
+//suppose we made an array
+//we can access by doing arr.__proto__
+
+//Array.__proto__.__proto__.__proto__ it's actually null its called prototype chain
+// object.__proto__.__proto__ is a null too
+
+//in Js everything is an objec
