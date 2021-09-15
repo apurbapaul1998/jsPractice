@@ -833,3 +833,17 @@ printMyName;
 //If we have complex logic, and we have to create multiple objects again and again that have the same logic, 
 //we can write the logic once in a function and use that function as a factory to create our objects. 
 //It’s exactly the same as a real-world factory producing products.
+
+function createRobot(name){
+     return{
+         name: name,
+         talk:function(){
+             console.log('my name is '+name+',the robot');
+         }
+     };
+ }
+ const robo1=createRobot('Apurba');
+ robo1.talk();
+
+ const robo2=createRobot('Apurba2.0 after breakup');
+ robo2.talk();
