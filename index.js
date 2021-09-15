@@ -802,3 +802,28 @@ let name={
         console.log(this.firstName+ " "+this.lastname)
     }
 }
+
+
+name.printFullName();
+
+let name2={
+    firstName:"Sachin",
+    lastname:"Tendulkar"
+}
+// suppose there's another object and we need to do the same method, we can do function borrowing
+
+name.printFullName(name2) //we need to pass the name 2 as the argument
+//or what we can do is can make  the function separate and can pass different objects as the argument
+
+//we can do apply method, it's kind of same but in this we pass the additional parameters in an arraylist
+let printFullName=function (hometown,state){
+    console.log(this.firstName+""+this.lastname+"from"+hometown+","+state)
+}
+printFullName.call(name2,"mumbai","maharastra");
+printFullName.apply(name2,["mumbai","maharastra"]);
+
+//bind method
+let printMyName=printFullName.bind(name2,"Mumbai","Maharsatra");  //this is a function which we can invoke later,it doesn't retur implicitly,
+ //it makes a copy which we can use later
+console.log(printMyName);
+printMyName;
