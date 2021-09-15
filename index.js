@@ -780,3 +780,16 @@ object2.__proto__=object;
 console.log(object2.name); //it will print Apurba, when it's searching in object2 it can't find so it's going to it's proto,when it can't find in there, 
 //it goes to proto's proto
 //this is how js inherits
+
+
+Function.prototype.mybind=function(){
+    console.log("apurba")
+
+}
+function fun(){
+
+}
+function fun2(){
+
+}
+//now every function can access to mybind method
