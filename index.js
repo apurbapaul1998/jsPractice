@@ -764,4 +764,19 @@ button.addEventListener('click', addNewJoke)
 //Array.__proto__.__proto__.__proto__ it's actually null its called prototype chain
 // object.__proto__.__proto__ is a null too
 
-//in Js everything is an objec
+//in Js everything is an object
+
+
+let object={
+    name:"Apurba",
+    status:"bliionaire"
+}
+
+let object2={
+    city:"barasat"
+}
+
+object2.__proto__=object;
+console.log(object2.name); //it will print Apurba, when it's searching in object2 it can't find so it's going to it's proto,when it can't find in there, 
+//it goes to proto's proto
+//this is how js inherits
