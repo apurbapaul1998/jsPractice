@@ -719,3 +719,38 @@ const debounce = function (fn, d) {
 }
 
 const betterFunction = debounce(getData, 300);
+
+<body>
+    <h1>Click to get new joke</h1>
+    <button>Click Me</button>
+    <ul id="jokes"></ul>
+    <script src="app.js"></script>
+</body>
+
+//js
+const jokes = document.querySelector('#jokes');
+const button = document.querySelector('button')
+
+
+const addNewJoke = async () => {
+    const jokeText = await getDadJoke()
+    const newLI = document.createElement('LI');
+    newLI.append(jokeText);
+    jokes.append(newLI);
+}
+
+
+const getDadJoke = async () => {
+    try {
+        const config = { headers: { Accept: 'application/json' } }
+        const res = await axios.get('https://icanhazdadjoke.com/', config)
+        return res.data.joke
+
+    }
+    catch (e) {
+        return "No jokes available!!sorry!!"
+    }
+
+
+}
+button.addEventListener('click', addNewJoke)
