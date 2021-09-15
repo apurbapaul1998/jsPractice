@@ -793,3 +793,12 @@ function fun2(){
 
 }
 //now every function can access to mybind method
+
+/function call
+let name={
+    firstName:"Apurba",
+    lastname:"Paul",
+    printFullName:function(){
+        console.log(this.firstName+ " "+this.lastname)
+    }
+}
