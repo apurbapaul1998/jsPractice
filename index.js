@@ -847,3 +847,21 @@ function createRobot(name){
 
  const robo2=createRobot('Apurba2.0 after breakup');
  robo2.talk();
+
+
+//TrustIssues with setTimeout()
+console.log("start");
+setTimeout(function cb(){
+  console.log("callback");
+},5000);
+
+console.log("End");
+
+//we are now trying to block the main thread to see if the setTimeout expires or not
+
+let startDate=new Date().getTime();
+let endDate=startDate;
+while(endDate<startDate+10000){
+  endDate=new Date().getTime();
+}
+console.log("while expires");
