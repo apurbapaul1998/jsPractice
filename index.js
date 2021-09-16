@@ -865,3 +865,14 @@ while(endDate<startDate+10000){
   endDate=new Date().getTime();
 }
 console.log("while expires");
+
+
+//Even if the timer is zero, that function has to go through Callback queue,it will register a callback into webApi environment 
+//js doesn't wait for anything so it will print End and then though the timer has expired, it will go to the callback queue once the callStack is empty,
+//then it will print the thing inside the function
+console.log("Start");
+
+setTimeout(function cb(){
+  console.log("callback");
+},0);
+console.log("End");
