@@ -38,8 +38,8 @@ console.log(typeof(marksClass5))
 // 2.Reference data types: Oobjects,Arrays
 
 // // Arrays
-// var numbers=[2,3,4,5,6]
-// console.log(numbers)
+ var numbers=[2,3,4,5,6]
+ console.log(numbers)
 
 // functions : take two user input from the user and calculate the average
 
@@ -74,68 +74,68 @@ console.log(typeof(marksClass5))
  }
 
 
-// let i=0;
-// do{
-//     console.log(arr[i]);
-//     i++;
-// }while(i<arr.length);
+ let i=0;
+ do{
+     console.log(arr[i]);
+     i++;
+ }while(i<arr.length);
 
-// let myArr=["Fan","Apu", "Dslr","34B",null,true];
-// console.log(myArr.length);
-// myArr.pop();
-// myArr.push("ullu");
+ let myArr=["Fan","Apu", "Dslr","34B",null,true];
+ console.log(myArr.length);
+ myArr.pop();
+ myArr.push("ullu");
 
 
-// myArr.shift();
-// console.log(myArr.unshift("ullu ke patthe"))
-// console.log(myArr);
+ myArr.shift();
+ console.log(myArr.unshift("ullu ke patthe"))
+ console.log(myArr);
 
 // Read about array methods in js
-// let lowlyString="Apurba will be a billionaire";
-// newString=lowlyString.replace("billionaire","multibllionaire");
-// console.log(newString);
-// let myDate=new Date();
-// console.log(myDate)
-// console.log(myDate.getHours());
+ let lowlyString="Apurba will be a billionaire";
+ newString=lowlyString.replace("billionaire","multibllionaire");
+ console.log(newString);
+ let myDate=new Date();
+ console.log(myDate)
+ console.log(myDate.getHours());
 
 
 // Dom manipulation
-// let elem=document.getElementById('click')
-// console.log(elem)
+ let elem=document.getElementById('click')
+ console.log(elem)
 
-// let elemClass=document.getElementsByClassName('container')
-// console.log(elemClass)
-// // elemClass[0].style.background="yellow"
-// elemClass[0].classList.add("bg-primary")
-// elemClass[0].classList.add("text-success")
-// console.log(elem.innerHTML);
-// console.log(elem.innerTEXT);
-// tn=document.getElementsByTagName('div')
-// console.log(tn)
-// createdElement=document.createElement('p')
-// createdElement.innerText="'This is a created para'"
-// tn[0].appendChild(createdElement);
+ let elemClass=document.getElementsByClassName('container')
+ console.log(elemClass)
+ elemClass[0].style.background="yellow"
+ elemClass[0].classList.add("bg-primary")
+ elemClass[0].classList.add("text-success")
+ console.log(elem.innerHTML);
+ console.log(elem.innerTEXT);
+ tn=document.getElementsByTagName('div')
+ console.log(tn)
+ createdElement=document.createElement('p')
+ createdElement.innerText="'This is a created para'"
+ tn[0].appendChild(createdElement);
 
 
-// in button onclick=clicked(); called the clicked() function
+ in button onclick=clicked(); called the clicked() function
 // there are other methods like onmouseover onmouseout
-// function clicked(){
-//     console.log("the button was clicked");
-// }
+ function clicked(){
+     console.log("the button was clicked");
+ }
 
-// // window.onload=function(){
-// //     console.log('the doc was loaded')
-// // }
-// document.getElementById("firstContainer").style.backgroundColor="blue"
+ window.onload=function(){
+     console.log('the doc was loaded')
+ }
+ document.getElementById("firstContainer").style.backgroundColor="blue"
 
-// firstContainer.addEventListener('click',function(){
-//     document.querySelectorAll('.container'[1].innerHTML)="<b> We have clicked </b>"
-//     console.log("click hua bhai")
-// })
+ firstContainer.addEventListener('click',function(){
+     document.querySelectorAll('.container'[1].innerHTML)="<b> We have clicked </b>"
+     console.log("click hua bhai")
+ })
 
-// firstContainer.addEventListener('mouseover',function(){
-//     console.log("you touched me")
-// })
+ firstContainer.addEventListener('mouseover',function(){
+     console.log("you touched me")
+ })
 
 // // there are tons of events
 
