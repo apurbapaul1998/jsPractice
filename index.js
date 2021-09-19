@@ -139,30 +139,30 @@ console.log(typeof(marksClass5))
 
 // // there are tons of events
 
-// firstContainer.addEventListener('mouseup',function(){
-//     console.log("mouse is up ")
-// })
+ firstContainer.addEventListener('mouseup',function(){
+     console.log("mouse is up ")
+ })
 
 
 // arrow function
 
-// function sum(a,b){
-//     return 5;
-// }
+ function sum(a,b){
+     return 5;
+ }
 
-// sum=(a,b)=>{
-//     return a+b;  we can use this format very easily in middle of  code 
-// }
+ sum=(a,b)=>{
+     return a+b;  we can use this format very easily in middle of  code 
+ }
 
 // setTimeout (it schedules things to happen by the function)
 
-// logFunction= ()=> {
-//     // document.querySelectorAll('.container'[1].innerHTML= " <b> set interval fired </b> ";
-//     console.log("I am your log");
-// }
-// setTimeout(logFunction,2000); will show in console after 2 secs
-// clr=setInterval(logFunction,2000);    when you want to do something repeatedly
-// when you need to stop this you have to run clearInterval(clr) in the console
+ logFunction= ()=> {
+     // document.querySelectorAll('.container'[1].innerHTML= " <b> set interval fired </b> ";
+     console.log("I am your log");
+ }
+ setTimeout(logFunction,2000); will show in console after 2 secs
+ clr=setInterval(logFunction,2000);    when you want to do something repeatedly
+ when you need to stop this you have to run clearInterval(clr) in the console
 
 
 // Creating Json string to transfer datas
