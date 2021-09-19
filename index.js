@@ -43,35 +43,35 @@ console.log(typeof(marksClass5))
 
 // functions : take two user input from the user and calculate the average
 
-// a=prompt("enter a number");
-// b=prompt("enter another number");
-// var a1 = parseInt(a);
-// var b1 = parseInt(b);
-// function avg(a1,b1){
-//     c=((a1+b1)/2);
-//     return c;
-// }
-// c1=avg(a1,b1);
-// console.log (c1)
+ a=prompt("enter a number");
+ b=prompt("enter another number");
+ var a1 = parseInt(a);
+ var b1 = parseInt(b);
+ function avg(a1,b1){
+      c=((a1+b1)/2);
+     return c;
+ }
+ c1=avg(a1,b1);
+ console.log (c1)
 
 
-// var arr = [4, 3, 5, 6, 7, 9, 10, 11, 122, 2]
-// // console.log(arr)
+ var arr = [4, 3, 5, 6, 7, 9, 10, 11, 122, 2]
+  console.log(arr)
 
-// for(var i=0;i<arr.length;i++){
-//     console.log(arr[i])
-// }
+ for(var i=0;i<arr.length;i++){
+     console.log(arr[i])
+ }
 
 
-// arr.forEach(function(element){console.log(element)
+ arr.forEach(function(element){console.log(element)
 
-// })
+ })
 
-// let i = 0;
-// while (i < arr.length) {
-//     console.log(arr[i]);
-//     i++;
-// }
+ let i = 0;
+ while (i < arr.length) {
+     console.log(arr[i]);
+     i++;
+ }
 
 
 // let i=0;
