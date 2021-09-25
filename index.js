@@ -876,3 +876,17 @@ setTimeout(function cb(){
   console.log("callback");
 },0);
 console.log("End");
+
+
+25th September 2021
+//will give me links which have cryptocurrency in links
+//can run in console
+let str="cryptocurrency";
+let lins=document.links;
+console.log(links);
+let href;
+Array.from(links).forEach(function(element){
+    if(href.includes(str)){
+        console.log(href);
+    }
+})
