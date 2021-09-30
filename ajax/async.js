@@ -19,18 +19,35 @@ function buttonClickHandler() {
     const xhr = new XMLHttpRequest();
 
     //open the object
-    xhr.open('GET', 'apurba.txt', true);  //this takes 3 argument, true means its async operation
-
+    // xhr.open('GET', 'apurba.txt', true);  //this takes 3 argument, true means its async operation
+//use this post request
+xhr.open('POST', 'http://dummy.restapiexample.com/api/v1/create', true); 
+xhr.getAllResponseHeaders('Content-type','json');
     //what to do on progress(optional)
     xhr.onprogress = function () {
         console.log('on progress');
     }
+
+    // xhr.onreadystatechange=function(){
+    //     console.log("ready state",xhr.readyState) //search readyState values online
+    // }
     //what to do when response is ready
     xhr.onload = function () {
+        if(this.status===200){
         console.log(this.responseText);
+        }
+        else{
+            console.error("some error occured")
+        }
     }
 
+
     //send the request
-    xhr.send();
+    params=`{name=test2&salary=123&age=23}`
+    xhr.send(params);
+    console.log("we are done!")
 
 }
+
+
+//post request//
