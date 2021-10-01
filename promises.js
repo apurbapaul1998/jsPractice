@@ -22,3 +22,6 @@ func1().then(function(){
 }).catch(function(error){
     console.log('Apurba:very bad bro!!'+error);  //if func1 doesnt do then it's under catch
 })
+
+//function inside then is ran as - resolve()
+//function inside catch is ran as - reject()
